@@ -50,7 +50,7 @@ To run the application, make sure you have Java and Maven installed on your syst
 2. Click the "Start" button to initiate the webcam feed and start scanning for QR codes.
 3. Hold a QR code in front of the webcam.
 4. Once a QR code is detected and decoded, the information will be displayed in the text area.
-5. Click the "Stop" button to halt the webcam feed and scanning.
+5. Click the "Pause" button to halt the webcam feed and scanning.
 6. You can clear the displayed information by clicking the "Clear" button.
 
 ## Contributing
