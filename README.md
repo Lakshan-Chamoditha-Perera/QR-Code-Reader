@@ -1,6 +1,8 @@
 # QR Code Reader Application
 
 This is a simple QR Code reader application developed using Java and JavaFX. The application utilizes the computer's webcam to scan QR codes and display the decoded information on the user interface.
+
+
 ![image](https://github.com/Lakshan-Chamoditha-Perera/QR-Code-Reader/blob/main/src/main/resources/com/example/qrcodereader/assets/ui.png)
 ## Table of Contents
 
