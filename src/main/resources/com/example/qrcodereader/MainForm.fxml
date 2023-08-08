@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPanel" prefHeight="822.0" prefWidth="439.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.qrcodereader.controller.MainFormController">
+    <children>
+        <Button fx:id="btnEnd" layoutX="232.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnEndOnAction" prefHeight="37.0" prefWidth="102.0" text="Pause">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="btnStart" defaultButton="true" layoutX="108.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnStartOnAction" prefHeight="37.0" prefWidth="102.0" style="-fx-background-radius: 5;" text="Start">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <TextArea fx:id="txtArea" editable="false" layoutX="67.0" layoutY="411.0" prefHeight="376.0" prefWidth="311.0" promptText="Embedded data in QR code" style="-fx-background-color: #EEEDED;" />
+        <AnchorPane fx:id="miniPanel" layoutX="62.0" layoutY="78.0" prefHeight="229.0" prefWidth="318.0" style="-fx-border-color: #EEEDED; -fx-border-radius: 10;">
+            <children>
+                <ImageView fitHeight="222.0" fitWidth="225.0" layoutX="46.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/img.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Separator layoutX="12.0" layoutY="366.0" prefHeight="3.0" prefWidth="418.0" />
+        <Label layoutX="89.0" layoutY="796.0" text="Developed by Lakshan Chamoditha Perera">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="67.0" layoutY="14.0" prefHeight="50.0" prefWidth="311.0" text="  QR Code Reader" wrapText="true">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+      <Button layoutX="323.0" layoutY="380.0" mnemonicParsing="false" onAction="#txtAreaClearOnAction" prefHeight="15.0" prefWidth="57.0" style="-fx-background-color: #F6F6F6; -fx-background-radius: 10;" text="Clear" />
+    </children>
+</AnchorPane>
